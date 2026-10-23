@@ -7,6 +7,8 @@ An original, fictional tourism-board website for the **Autumn of Code 24-hour We
 
 **Participants:** Samnan · Mohammad Shadab
 
+**Live site:** https://samnannn.github.io/chronoterra/
+
 ## Run it
 
 It is plain HTML, CSS and JavaScript. There is **no install and no build step** to view the site.
