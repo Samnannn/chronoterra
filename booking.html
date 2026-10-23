@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan Your Journey — CHRONOTERRA</title>
+<meta name="description" content="A prototype booking concierge for time travel. Choose a destination, date, party and class, then review an illustrative itinerary and cost. No real booking or payment.">
+<meta name="theme-color" content="#11110F">
+<meta property="og:title" content="Plan Your Journey — CHRONOTERRA">
+<meta property="og:description" content="A prototype booking concierge for time travel. Choose a destination, date, party and class, then review an illustrative itinerary and cost. No real booking or payment.">
+<meta property="og:image" content="assets/img/hero-md.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20fill%3D'%2311110F'%2F%3E%3Ccircle%20cx%3D'16'%20cy%3D'16'%20r%3D'11'%20fill%3D'none'%20stroke%3D'%23F1EBDD'%20stroke-width%3D'1.4'%2F%3E%3Cellipse%20cx%3D'16'%20cy%3D'16'%20rx%3D'11'%20ry%3D'4.2'%20transform%3D'rotate(-28%2016%2016)'%20fill%3D'none'%20stroke%3D'%23F1EBDD'%20stroke-width%3D'1.4'%2F%3E%3Ccircle%20cx%3D'24.6'%20cy%3D'9.8'%20r%3D'2.4'%20fill%3D'%23B89A62'%2F%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/home.css">
+<link rel="stylesheet" href="assets/css/destinations.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/fantasy.css">
+<script>document.documentElement.classList.add('js');document.addEventListener('error',function(e){var t=e.target;if(t&&t.tagName==='IMG'){t.classList.add('is-broken');if(t.parentElement)t.parentElement.classList.add('img-failed');}},true);</script>
+</head>
+<body class="page-booking">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-theme="light">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html" aria-label="CHRONOTERRA, Temporal Tourism Board — home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.5" fill="none" stroke="currentColor" stroke-width="1"/><ellipse cx="16" cy="16" rx="13.5" ry="5.2" transform="rotate(-28 16 16)" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="26.7" cy="8.2" r="2.1" fill="var(--gold)"/><path d="M16 1.2v3M16 27.8v3" stroke="currentColor" stroke-width="1"/></svg>
+      <span class="brand__text"><span class="brand__word">CHRONOTERRA</span><span class="brand__sub">Temporal Tourism Board</span></span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="destinations.html">Destinations</a></li>
+        <li><a class="nav__link" href="advisories.html">Travel Advisories</a></li>
+        <li><a class="nav__link" href="journal.html">Field Journal</a></li>
+        <li class="nav__more">
+          <button class="nav__link nav__more-btn" type="button" aria-expanded="false" aria-controls="kit-menu">Traveller’s Kit <svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+          <ul class="nav__sub" id="kit-menu">
+            <li><a class="nav__sublink" href="packing.html">Packing List</a></li>
+            <li><a class="nav__sublink" href="faq.html">Paradox FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="btn-ticket nav__cta" href="booking.html"><span>Plan Your Journey</span></a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span class="nav-toggle__bars" aria-hidden="true"></span></button>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+
+<section class="page-hero page-hero--paper" aria-labelledby="bk-h">
+  <div class="container page-hero__grid">
+    <div>
+      <p class="eyebrow">Booking · The concierge desk</p>
+      <h1 class="display display--xl" id="bk-h">Your next life is a <em>departure away.</em></h1>
+    </div>
+    <div class="page-hero__aside">
+      <p class="lede">Tell the concierge where, when and how. We will handle the centuries.</p>
+      <p class="fiction-note"><span class="fiction-note__badge">Prototype</span><span>A design prototype. Prices are illustrative, in a fictional currency (<strong>TC</strong>, Time Credits). No real reservation or payment is made, and nothing leaves your browser.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper-2 packages" aria-labelledby="pkg-h" data-packages>
+  <div class="container">
+    <header class="section-head section-head--paper"><p class="eyebrow">Sample packages</p><h2 class="display display--md" id="pkg-h">Four ways to <em>begin.</em></h2>
+      <p class="section-head__aside">Curated itineraries to start from. Choose one to pre-fill the form below, then adjust anything you like.</p></header>
+    <div class="pkgs"><article class="pkg">
+      <p class="meta">Agra · 1631 CE</p>
+      <h3>The Courtier’s Week</h3>
+      <p>Seven days at the Mughal court, with a guide-historian and a table of local dishes.</p>
+      <p class="pkg__meta"><span>7 days</span><span>Voyager class</span><span class="risk risk--2 risk--compact" role="img" aria-label="Temporal risk: Class II, Mild (2 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="risk__class">Class II · Mild</span></span></p>
+      <p class="pkg__price" data-pkg-price="pkg-courtier">—</p>
+      <button class="btn btn--dark btn--small" type="button" data-package="pkg-courtier">Use this package</button>
+    </article><article class="pkg">
+      <p class="meta">Earth · 3000 CE</p>
+      <h3>Tomorrow Weekend</h3>
+      <p>A long weekend in the year 3000, with night excursions and a permit for sketching.</p>
+      <p class="pkg__meta"><span>3 days</span><span>Voyager class</span><span class="risk risk--3 risk--compact" role="img" aria-label="Temporal risk: Class III, Elevated (3 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="risk__class">Class III · Elevated</span></span></p>
+      <p class="pkg__price" data-pkg-price="pkg-tomorrow">—</p>
+      <button class="btn btn--dark btn--small" type="button" data-package="pkg-tomorrow">Use this package</button>
+    </article><article class="pkg">
+      <p class="meta">Alternate timeline · 2027 CE</p>
+      <h3>The Disconnect</h3>
+      <p>A single, unforgettable day. Pack a paper map.</p>
+      <p class="pkg__meta"><span>1 day</span><span>Observer class</span><span class="risk risk--2 risk--compact" role="img" aria-label="Temporal risk: Class II, Mild (2 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="risk__class">Class II · Mild</span></span></p>
+      <p class="pkg__price" data-pkg-price="pkg-unplugged">—</p>
+      <button class="btn btn--dark btn--small" type="button" data-package="pkg-unplugged">Use this package</button>
+    </article><article class="pkg">
+      <p class="meta">Alexandria · c. 200 BCE</p>
+      <h3>Scholar’s Circuit</h3>
+      <p>Three nights in Alexandria with a personal archivist and a rooftop observation evening.</p>
+      <p class="pkg__meta"><span>3 days</span><span>Chronarch class</span><span class="risk risk--3 risk--compact" role="img" aria-label="Temporal risk: Class III, Elevated (3 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="risk__class">Class III · Elevated</span></span></p>
+      <p class="pkg__price" data-pkg-price="pkg-scholar">—</p>
+      <button class="btn btn--dark btn--small" type="button" data-package="pkg-scholar">Use this package</button>
+    </article></div>
+  </div>
+</section>
+
+<section class="section section--paper booking" id="plan" aria-labelledby="plan-h">
+  <div class="container booking__grid">
+    <div class="booking__formcol" data-form-col>
+      <h2 class="display display--md" id="plan-h">Plan your <em>journey.</em></h2>
+      <div class="errors" id="form-errors" role="alert" tabindex="-1" hidden></div>
+      <form id="booking-form" novalidate>
+        <fieldset class="fs">
+          <legend><span class="fs__n">01</span> Destination</legend>
+          <div class="tiles" id="dest-tiles"><label class="tile">
+      <input class="tile__input" type="radio" name="dest" value="mughal-court" required>
+      <span class="tile__box">
+        <span class="tile__thumb"><img src="assets/img/mughal-jahangiri-md.jpg" srcset="assets/img/mughal-jahangiri-md.jpg 900w, assets/img/mughal-jahangiri-lg.jpg 1800w" sizes="96px" width="1800" height="1197" alt="Carved red-sandstone balconies and courtyard of the Jahangiri Mahal inside Agra Fort, seen from below against a clear sky" loading="lazy" decoding="async" style="object-position:50% 82%"></span>
+        <span class="tile__text"><span class="tile__num">01</span><strong>The Mughal Court</strong><small>Agra · 1631 CE</small></span>
+        <span class="tile__risk"><span class="risk risk--2 risk--compact" role="img" aria-label="Temporal risk: Class II, Mild (2 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="risk__class">Class II · Mild</span></span></span>
+      </span></label><label class="tile">
+      <input class="tile__input" type="radio" name="dest" value="new-earth" required>
+      <span class="tile__box">
+        <span class="tile__thumb"><img src="assets/img/future-a-md.jpg" srcset="assets/img/future-a-md.jpg 900w, assets/img/future-a-lg.jpg 1800w" sizes="96px" width="1800" height="1200" alt="Giant illuminated tree-like structures and a glowing skyway against a night sky" loading="lazy" decoding="async" style="object-position:50% 55%"></span>
+        <span class="tile__text"><span class="tile__num">02</span><strong>New Earth</strong><small>Earth · 3000 CE</small></span>
+        <span class="tile__risk"><span class="risk risk--3 risk--compact" role="img" aria-label="Temporal risk: Class III, Elevated (3 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="risk__class">Class III · Elevated</span></span></span>
+      </span></label><label class="tile">
+      <input class="tile__input" type="radio" name="dest" value="last-day-of-wifi" required>
+      <span class="tile__box">
+        <span class="tile__thumb"><img src="assets/img/wifi-a-md.jpg" srcset="assets/img/wifi-a-md.jpg 900w, assets/img/wifi-a-lg.jpg 1800w" sizes="96px" width="1800" height="1198" alt="A quiet neon-lit city street at night with parked scooters and empty seating" loading="lazy" decoding="async" style="object-position:40% 50%"></span>
+        <span class="tile__text"><span class="tile__num">03</span><strong>The Last Day of Wi-Fi</strong><small>Alternate timeline · 2027 CE</small></span>
+        <span class="tile__risk"><span class="risk risk--2 risk--compact" role="img" aria-label="Temporal risk: Class II, Mild (2 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="risk__class">Class II · Mild</span></span></span>
+      </span></label><label class="tile">
+      <input class="tile__input" type="radio" name="dest" value="alexandria-after-dark" required>
+      <span class="tile__box">
+        <span class="tile__thumb"><img src="assets/img/alex-corniche-md.jpg" srcset="assets/img/alex-corniche-md.jpg 900w, assets/img/alex-corniche-lg.jpg 1800w" sizes="96px" width="1800" height="1350" alt="The curving waterfront of Alexandria at night, its road and buildings glowing beside a dark sea" loading="lazy" decoding="async" style="object-position:50% 50%"></span>
+        <span class="tile__text"><span class="tile__num">04</span><strong>Alexandria, After Dark</strong><small>Alexandria · c. 200 BCE</small></span>
+        <span class="tile__risk"><span class="risk risk--3 risk--compact" role="img" aria-label="Temporal risk: Class III, Elevated (3 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="risk__class">Class III · Elevated</span></span></span>
+      </span></label><label class="tile">
+      <input class="tile__input" type="radio" name="dest" value="carbon-free-city" required>
+      <span class="tile__box">
+        <span class="tile__thumb"><img src="assets/img/green-a-md.jpg" srcset="assets/img/green-a-md.jpg 900w, assets/img/green-a-lg.jpg 1650w" sizes="96px" width="1650" height="2200" alt="A residential tower with trees and plants growing on every balcony" loading="lazy" decoding="async" style="object-position:50% 45%"></span>
+        <span class="tile__text"><span class="tile__num">05</span><strong>The Carbon-Free City</strong><small>Earth · 2189 CE</small></span>
+        <span class="tile__risk"><span class="risk risk--1 risk--compact" role="img" aria-label="Temporal risk: Class I, Serene (1 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="risk__class">Class I · Serene</span></span></span>
+      </span></label><label class="tile">
+      <input class="tile__input" type="radio" name="dest" value="the-first-dawn" required>
+      <span class="tile__box">
+        <span class="tile__thumb"><img src="assets/img/dawn-a-md.jpg" srcset="assets/img/dawn-a-md.jpg 900w, assets/img/dawn-a-lg.jpg 1800w" sizes="96px" width="1800" height="1200" alt="A lava lake erupting inside a volcanic crater, steam drifting past a distant cone" loading="lazy" decoding="async" style="object-position:50% 50%"></span>
+        <span class="tile__text"><span class="tile__num">06</span><strong>The First Dawn</strong><small>Earth · c. 4.5 billion years ago</small></span>
+        <span class="tile__risk"><span class="risk risk--5 risk--compact" role="img" aria-label="Temporal risk: Class V, Extreme (5 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="risk__class">Class V · Extreme</span></span></span>
+      </span></label></div>
+          <p class="field__error" id="err-dest" hidden></p>
+        </fieldset>
+
+        <fieldset class="fs">
+          <legend><span class="fs__n">02</span> Departure &amp; party</legend>
+          <div class="fields">
+            <div class="field">
+              <label for="date">Departure date</label>
+              <input type="date" id="date" name="date" required aria-describedby="date-help err-date">
+              <p class="field__help" id="date-help">Your own calendar. We handle the arrival era.</p>
+              <p class="field__error" id="err-date" hidden></p>
+            </div>
+            <div class="field">
+              <label for="travellers">Travellers</label>
+              <div class="stepper">
+                <button type="button" class="stepper__btn" data-step="-1" aria-label="Fewer travellers">−</button>
+                <input type="number" id="travellers" name="travellers" min="1" max="6" value="2" inputmode="numeric" aria-describedby="trav-help">
+                <button type="button" class="stepper__btn" data-step="1" aria-label="More travellers">+</button>
+              </div>
+              <p class="field__help" id="trav-help">Between 1 and 6. Larger parties require a separate gate.</p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fs">
+          <legend><span class="fs__n">03</span> Duration &amp; class</legend>
+          <p class="fs__label" id="dur-label">Journey duration (destination time)</p>
+          <div class="segs" role="radiogroup" aria-labelledby="dur-label" id="dur-group">
+            <label class="seg"><input type="radio" name="days" value="1"><span>1 day</span></label><label class="seg"><input type="radio" name="days" value="3"><span>3 days</span></label><label class="seg"><input type="radio" name="days" value="7" checked><span>7 days</span></label><label class="seg"><input type="radio" name="days" value="14"><span>14 days</span></label>
+          </div>
+          <p class="field__help" id="dur-help">Choose a destination to see its available durations.</p>
+          <p class="fs__label" id="cls-label">Travel class</p>
+          <div class="classes-pick" role="radiogroup" aria-labelledby="cls-label">
+            <label class="cpick"><input type="radio" name="cls" value="observer"><span class="cpick__box"><strong>Observer</strong><small>Shared gate. Look, listen, do not touch.</small><em>×1.00</em></span></label><label class="cpick"><input type="radio" name="cls" value="voyager" checked><span class="cpick__box"><strong>Voyager</strong><small>Private lodging, period wardrobe, a named historian-guide.</small><em>×1.45</em></span></label><label class="cpick"><input type="radio" name="cls" value="chronarch"><span class="cpick__box"><strong>Chronarch</strong><small>Private gate, guaranteed return window, a personal archivist.</small><em>×2.20</em></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="fs">
+          <legend><span class="fs__n">04</span> Expedition preferences <span class="muted">(optional)</span></legend>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="prefs" value="historian"><span class="pref__box"><strong>Guide-historian</strong><small>A licensed guide, in period dress.</small><em>+TC 650 / day</em></span></label><label class="pref"><input type="checkbox" name="prefs" value="cuisine"><span class="pref__box"><strong>Local table</strong><small>Authentic meals, allergens declared.</small><em>+TC 420 / party</em></span></label><label class="pref"><input type="checkbox" name="prefs" value="photo"><span class="pref__box"><strong>Sketch &amp; photography permit</strong><small>Era-safe recording tools only.</small><em>+TC 260 / traveller</em></span></label><label class="pref"><input type="checkbox" name="prefs" value="night"><span class="pref__box"><strong>Night excursions</strong><small>After-dark access with an escort.</small><em>+TC 340 / party</em></span></label><label class="pref"><input type="checkbox" name="prefs" value="quiet"><span class="pref__box"><strong>Quiet itinerary</strong><small>Fewer crowds, gentler pace.</small><em>No charge</em></span></label><label class="pref"><input type="checkbox" name="prefs" value="access"><span class="pref__box"><strong>Accessibility support</strong><small>Step-free routes and extra time, at no charge.</small><em>No charge</em></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="fs">
+          <legend><span class="fs__n">05</span> Manifest</legend>
+          <div class="field">
+            <label for="alias">Traveller alias</label>
+            <input type="text" id="alias" name="alias" required minlength="2" maxlength="40" autocomplete="nickname" placeholder="A first name or nickname" aria-describedby="alias-help err-alias">
+            <p class="field__help" id="alias-help">That’s all we ask. No email, no address, no payment details. This is a prototype.</p>
+            <p class="field__error" id="err-alias" hidden></p>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button class="btn-ticket btn-ticket--lg" type="submit"><span>Review your journey</span></button>
+          <p class="small muted">No real reservation or payment is made. Illustrative prices in fictional Time Credits (TC).</p>
+        </div>
+      </form>
+    </div>
+
+    <aside class="summary" id="summary" aria-label="Your journey summary" aria-live="polite">
+      <div class="summary__empty" data-summary-empty>
+        <p class="eyebrow">Your journey</p>
+        <p class="display display--md">Choose a destination and <em>your itinerary will take shape here.</em></p>
+        <p class="muted">The summary updates as you make each choice: the era, the risk, a day-by-day sketch and an itemised, entirely fictional cost.</p>
+      </div>
+      <div class="summary__full" data-summary-full hidden>
+        <div class="summary__img" data-s-img></div>
+        <div class="summary__body">
+          <p class="meta" data-s-kind></p>
+          <h3 class="summary__title" data-s-name></h3>
+          <p class="summary__era" data-s-era></p>
+          <p data-s-risk></p>
+          <p class="small muted" data-s-hazard></p>
+          <h4 class="summary__h">Itinerary preview</h4>
+          <ol class="sitin" data-s-itin></ol>
+          <h4 class="summary__h">Cost breakdown <span class="muted">· illustrative</span></h4>
+          <table class="cost"><tbody data-s-cost></tbody><tfoot><tr><th scope="row">Total</th><td data-s-total>—</td></tr></tfoot></table>
+          <p class="small muted">Fictional Time Credits. Not a real price, quote or offer.</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<a class="mini" href="#summary" data-mini hidden><span class="mini__label">Your journey</span><span class="mini__name" data-mini-name></span><strong class="mini__total" data-mini-total></strong></a>
+
+<section class="section section--ink grain confirm" id="confirmation" aria-labelledby="conf-h" tabindex="-1" hidden>
+  <div class="container">
+    <p class="eyebrow">Journey reviewed</p>
+    <h2 class="display display--lg" id="conf-h">Your departure is <em>drafted.</em></h2>
+    <p class="lede">Lovely choice. Here is your temporal boarding pass, a keepsake of a journey that exists only in this browser tab.</p>
+    <div class="pass" data-pass>
+      <div class="pass__main">
+        <p class="pass__brand">CHRONOTERRA <span>Temporal boarding pass</span></p>
+        <h3 class="pass__dest" data-c-name></h3>
+        <p class="pass__era" data-c-era></p>
+        <dl class="pass__grid">
+          <div><dt>Traveller</dt><dd data-c-alias></dd></div>
+          <div><dt>Departure</dt><dd data-c-date></dd></div>
+          <div><dt>Party</dt><dd data-c-party></dd></div>
+          <div><dt>Class</dt><dd data-c-class></dd></div>
+          <div><dt>Duration</dt><dd data-c-days></dd></div>
+          <div><dt>Coordinate</dt><dd data-c-coords class="mono"></dd></div>
+          <div><dt>Risk</dt><dd data-c-risk></dd></div>
+          <div><dt>Preferences</dt><dd data-c-prefs></dd></div>
+        </dl>
+      </div>
+      <div class="pass__stub">
+        <p class="meta-label">Reference</p>
+        <p class="pass__ref mono" data-c-ref></p>
+        <div class="pass__barcode" aria-hidden="true"></div>
+        <p class="meta-label">Illustrative total</p>
+        <p class="pass__total" data-c-total></p>
+        <span class="pass__stamp" aria-hidden="true"><svg class="stamp " viewBox="0 0 120 120" aria-hidden="true" focusable="false"><defs><path id="stp5" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs><circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="60" cy="60" r="32" fill="none" stroke="currentColor" stroke-width=".8"/><text font-family="var(--mono)" font-size="7.4" fill="currentColor"><textPath href="#stp5" textLength="276" lengthAdjust="spacing">REVIEWED · NOT A RESERVATION · FICTIONAL · </textPath></text><text x="60" y="64" text-anchor="middle" font-family="var(--serif)" font-size="17" fill="currentColor">PROTOTYPE</text><path d="M44 74h32" stroke="currentColor" stroke-width=".8"/></svg></span>
+      </div>
+    </div>
+    <div class="confirm__disclaimer"><strong>Please note:</strong> this is a design prototype. <strong>No reservation or payment has been made</strong>, no data has been sent anywhere, and no time travel is available. The boarding pass is a souvenir.</div>
+    <div class="confirm__next">
+      <div><span class="steps__n">01</span><h3>Read the advisories</h3><p>Fictional, but charming, and good practice for the real world.</p><a class="link-arrow" href="advisories.html">Travel advisories</a></div>
+      <div><span class="steps__n">02</span><h3>Pack for the century</h3><p>Check items off the interactive packing list.</p><a class="link-arrow" href="packing.html">Packing list</a></div>
+      <div><span class="steps__n">03</span><h3>Learn the paradoxes</h3><p>Past selves, closed portals and souvenirs, answered.</p><a class="link-arrow" href="faq.html">Paradox FAQ</a></div>
+    </div>
+    <p class="confirm__actions"><button class="btn btn--gold" type="button" data-edit>Edit this journey</button><button class="btn btn--ghost" type="button" data-new>Plan another journey</button></p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="index.html" aria-label="CHRONOTERRA — home"><svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.5" fill="none" stroke="currentColor" stroke-width="1"/><ellipse cx="16" cy="16" rx="13.5" ry="5.2" transform="rotate(-28 16 16)" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="26.7" cy="8.2" r="2.1" fill="var(--gold)"/><path d="M16 1.2v3M16 27.8v3" stroke="currentColor" stroke-width="1"/></svg><span class="brand__text"><span class="brand__word">CHRONOTERRA</span><span class="brand__sub">Temporal Tourism Board</span></span></a>
+        <p class="site-footer__statement">The world’s first tourism board beyond the boundaries of time.</p>
+      </div>
+      <nav class="site-footer__col" aria-label="Explore">
+        <h2 class="eyebrow">Explore</h2>
+        <ul><li><a href="destinations.html">Destinations</a></li><li><a href="advisories.html">Travel Advisories</a></li><li><a href="booking.html">Plan Your Journey</a></li></ul>
+      </nav>
+      <nav class="site-footer__col" aria-label="Traveller’s Kit">
+        <h2 class="eyebrow">Traveller’s Kit</h2>
+        <ul><li><a href="journal.html">Field Journal</a></li><li><a href="packing.html">Packing List</a></li><li><a href="faq.html">Paradox FAQ</a></li></ul>
+      </nav>
+      <div class="site-footer__col">
+        <h2 class="eyebrow">The Agency</h2>
+        <address>
+          CHRONOTERRA Temporal Tourism Board<br>
+          Registered outside of time<br>
+          HQ: roughly 11:59, local<br>
+          <a href="mailto:concierge@chronoterra.example">concierge@chronoterra.example</a><br>
+          <span class="muted">Placeholder contact · no real inbox</span>
+        </address>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p class="small">A fictional agency created for the Autumn of Code Website Design Competition. No bookings are real; no payment is taken. Photography is credited on the <a href="credits.html">credits page</a>. Built by Samnan &amp; Mohammad Shadab.</p>
+      <p class="site-footer__closing">Present company excluded.</p>
+    </div>
+  </div>
+</footer>
+<button class="to-top" type="button" aria-label="Back to top" hidden><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

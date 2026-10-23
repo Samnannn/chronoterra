@@ -1,0 +1,90 @@
+/* ==========================================================================
+   CHRONOTERRA — enchantment layer: aurora, fireflies, gilded frames, glow
+   Loaded last; purely decorative. Respects prefers-reduced-motion.
+   ========================================================================== */
+
+:root { --glow: rgba(214, 188, 134, 0.55); }
+
+/* ---------- Floating embers (canvas injected by main.js) ---------- */
+.embers { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; mix-blend-mode: screen; }
+.hero .embers { z-index: -1; }
+
+/* ---------- Aurora light over dark hero / invitation / banners ---------- */
+.hero::before, .invitation::before, .detail-hero::before, .page-hero--ink::before {
+  content: ''; position: absolute; inset: -20%; z-index: -1; pointer-events: none; mix-blend-mode: screen; opacity: 0.55;
+  background:
+    radial-gradient(40% 35% at 78% 22%, rgba(214, 188, 134, 0.38), transparent 70%),
+    radial-gradient(36% 40% at 90% 60%, rgba(96, 156, 170, 0.28), transparent 70%),
+    radial-gradient(32% 30% at 55% 10%, rgba(150, 110, 190, 0.26), transparent 70%);
+  animation: aurora 22s ease-in-out infinite alternate;
+}
+.page-hero--ink::before { z-index: 0; opacity: 0.4; }
+@keyframes aurora { from { transform: translate3d(-3%, 2%, 0) scale(1); } to { transform: translate3d(4%, -3%, 0) scale(1.12); } }
+
+/* ---------- Glowing portal ---------- */
+.hero__portal { filter: drop-shadow(0 0 14px rgba(214, 188, 134, 0.65)) drop-shadow(0 0 40px rgba(214, 188, 134, 0.3)); opacity: 0.85; }
+
+/* ---------- Gilded, shimmering type ---------- */
+@keyframes shimmer { to { background-position: 200% center; } }
+.hero__second, .display em, h1 em, h2 em {
+  background: linear-gradient(100deg, var(--gold) 0%, #f3dca3 28%, var(--gold) 52%, #f3dca3 78%, var(--gold) 100%);
+  background-size: 200% auto; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent !important;
+  animation: shimmer 9s linear infinite;
+}
+.hero__second { filter: drop-shadow(0 0 18px rgba(214, 188, 134, 0.35)); }
+/* on parchment, keep the burgundy ink but add a gilded underline-glow */
+.section--paper .display em, .section--paper-2 .display em, .page-hero--paper h1 em, .page-hero--paper .display em {
+  background: linear-gradient(100deg, #793C38 0%, #a8564f 30%, #793C38 55%, #b8695f 80%, #793C38 100%); background-size: 200% auto;
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero__title > span:not(.hero__second), .page-hero--ink .display--xl { text-shadow: 0 0 40px rgba(214, 188, 134, 0.12); }
+
+/* ---------- Ornament: diamond flourish on eyebrows ---------- */
+.eyebrow::before { width: 34px; background: linear-gradient(90deg, transparent, currentColor); height: 1px; }
+.eyebrow::after { content: '◆'; font-size: 0.55em; letter-spacing: 0; opacity: 0.8; }
+.site-footer .eyebrow::after, .hero__eyebrow::after { display: none; }
+
+/* ---------- Illuminated-manuscript frames on imagery ---------- */
+.feat__media, .dest__media, .note__media, .jcard__media, .jfeature__media, .route__img, .gallery__item, .destcard__media, .summary__img { position: relative; }
+.feat__media::after, .dest__media::after, .note__media::after, .jcard__media::after, .jfeature__media::after, .route__img::after, .destcard__media::after {
+  content: ''; position: absolute; inset: 10px; pointer-events: none; z-index: 2;
+  border: 1px solid rgba(214, 188, 134, 0.7); box-shadow: inset 0 0 0 1px rgba(17, 17, 15, 0.35), inset 0 0 30px rgba(17, 17, 15, 0.25);
+  transition: inset 0.6s var(--ease), border-color 0.4s;
+}
+.feat:hover .feat__media::after, .dest:hover .dest__media::after, .note:hover .note__media::after, .jcard:hover .jcard__media::after, .jfeature:hover .jfeature__media::after { inset: 16px; border-color: var(--gold-bright); }
+.gallery__item img { outline: 1px solid rgba(184, 154, 98, 0.7); outline-offset: -9px; }
+.dest__arch { box-shadow: 0 0 60px rgba(184, 154, 98, 0.28); }
+
+/* ---------- Glowing cards & controls ---------- */
+.notice, .pkg, .tile__box, .cpick__box, .pref__box { transition: box-shadow 0.4s var(--ease), border-color 0.3s, transform 0.4s var(--ease), background 0.2s; }
+.notice:hover { border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold), 0 0 38px rgba(214, 188, 134, 0.22); transform: translateY(-4px); }
+.pkg:hover { box-shadow: 0 0 0 1px var(--gold), 0 14px 44px rgba(121, 60, 56, 0.28); }
+.tile:hover .tile__box, .cpick:hover .cpick__box, .pref:hover .pref__box { box-shadow: 0 0 22px rgba(184, 154, 98, 0.35); }
+.btn--gold, .btn-ticket { box-shadow: 0 0 0 rgba(214, 188, 134, 0); }
+.btn--gold:hover { box-shadow: 0 0 34px rgba(214, 188, 134, 0.6); }
+.site-header.is-solid .btn-ticket, .invitation .btn-ticket, .cta-band .btn-ticket, .hero .btn-ticket { filter: drop-shadow(0 0 14px rgba(214, 188, 134, 0.35)); }
+.pulse { box-shadow: 0 0 12px var(--gold); }
+.stamp { filter: drop-shadow(0 0 6px rgba(214, 188, 134, 0.35)); }
+
+/* ---------- Enchanted parchment ---------- */
+.section--paper, .page-hero--paper { background-color: var(--paper); background-image: radial-gradient(120% 80% at 50% 0%, rgba(255, 250, 235, 0.65), transparent 60%), radial-gradient(90% 60% at 100% 100%, rgba(184, 154, 98, 0.12), transparent 70%); }
+.section--paper-2 { background-image: radial-gradient(100% 70% at 0% 0%, rgba(255, 250, 235, 0.5), transparent 60%); }
+.section--ink, .section--charcoal { background-image: radial-gradient(60% 50% at 85% 0%, rgba(184, 154, 98, 0.1), transparent 70%), radial-gradient(50% 45% at 5% 100%, rgba(121, 60, 56, 0.16), transparent 70%); }
+.section--burgundy { background-image: radial-gradient(60% 60% at 50% 0%, rgba(214, 188, 134, 0.14), transparent 70%); }
+
+/* ---------- Ruler dots glow, route nodes glow ---------- */
+.ruler__dot { box-shadow: 0 0 10px rgba(214, 188, 134, 0.45); }
+.route__node[aria-pressed='true'] .route__pip { box-shadow: 0 0 0 5px rgba(121, 60, 56, 0.15), 0 0 20px rgba(121, 60, 56, 0.45); }
+
+/* ---------- Soft vignette on big dark image blocks ---------- */
+.detail-hero__shade, .article-hero__shade, .invitation__shade { box-shadow: inset 0 0 160px rgba(17, 17, 15, 0.55); }
+
+@media (max-width: 960px) {
+  .hero::before { opacity: 0.4; }
+  .feat__media::after, .dest__media::after, .note__media::after, .jcard__media::after, .jfeature__media::after, .route__img::after, .destcard__media::after { inset: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero::before, .invitation::before, .detail-hero::before, .page-hero--ink::before { animation: none; }
+  .hero__second, .display em, h1 em, h2 em { animation: none; }
+  .embers { display: none; }
+}

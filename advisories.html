@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travel Advisories — CHRONOTERRA</title>
+<meta name="description" content="Fictional travel-safety guidance for temporal tourists: a five-class risk system, numbered advisories, a pre-departure checklist and the R.E.T.U.R.N. emergency protocol.">
+<meta name="theme-color" content="#11110F">
+<meta property="og:title" content="Travel Advisories — CHRONOTERRA">
+<meta property="og:description" content="Fictional travel-safety guidance for temporal tourists: a five-class risk system, numbered advisories, a pre-departure checklist and the R.E.T.U.R.N. emergency protocol.">
+<meta property="og:image" content="assets/img/hero-md.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20fill%3D'%2311110F'%2F%3E%3Ccircle%20cx%3D'16'%20cy%3D'16'%20r%3D'11'%20fill%3D'none'%20stroke%3D'%23F1EBDD'%20stroke-width%3D'1.4'%2F%3E%3Cellipse%20cx%3D'16'%20cy%3D'16'%20rx%3D'11'%20ry%3D'4.2'%20transform%3D'rotate(-28%2016%2016)'%20fill%3D'none'%20stroke%3D'%23F1EBDD'%20stroke-width%3D'1.4'%2F%3E%3Ccircle%20cx%3D'24.6'%20cy%3D'9.8'%20r%3D'2.4'%20fill%3D'%23B89A62'%2F%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/home.css">
+<link rel="stylesheet" href="assets/css/destinations.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/fantasy.css">
+<script>document.documentElement.classList.add('js');document.addEventListener('error',function(e){var t=e.target;if(t&&t.tagName==='IMG'){t.classList.add('is-broken');if(t.parentElement)t.parentElement.classList.add('img-failed');}},true);</script>
+</head>
+<body class="page-advisories">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-theme="dark">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html" aria-label="CHRONOTERRA, Temporal Tourism Board — home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.5" fill="none" stroke="currentColor" stroke-width="1"/><ellipse cx="16" cy="16" rx="13.5" ry="5.2" transform="rotate(-28 16 16)" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="26.7" cy="8.2" r="2.1" fill="var(--gold)"/><path d="M16 1.2v3M16 27.8v3" stroke="currentColor" stroke-width="1"/></svg>
+      <span class="brand__text"><span class="brand__word">CHRONOTERRA</span><span class="brand__sub">Temporal Tourism Board</span></span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="destinations.html">Destinations</a></li>
+        <li><a class="nav__link" href="advisories.html" aria-current="page">Travel Advisories</a></li>
+        <li><a class="nav__link" href="journal.html">Field Journal</a></li>
+        <li class="nav__more">
+          <button class="nav__link nav__more-btn" type="button" aria-expanded="false" aria-controls="kit-menu">Traveller’s Kit <svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+          <ul class="nav__sub" id="kit-menu">
+            <li><a class="nav__sublink" href="packing.html">Packing List</a></li>
+            <li><a class="nav__sublink" href="faq.html">Paradox FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="btn-ticket nav__cta" href="booking.html"><span>Plan Your Journey</span></a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span class="nav-toggle__bars" aria-hidden="true"></span></button>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+
+<section class="page-hero page-hero--ink grain" aria-labelledby="adv-h">
+  <div class="container page-hero__grid">
+    <div>
+      <p class="eyebrow">Travel advisories</p>
+      <h1 class="display display--xl" id="adv-h">Every era has its <em>hazards.</em></h1>
+    </div>
+    <div class="page-hero__aside">
+      <p class="lede">Time travel is an extraordinary privilege. Arriving unprepared is an avoidable tragedy.</p>
+      <p class="small muted-light"><strong>This is fiction.</strong> These advisories are world-building for an imaginary tourism board. They are not real safety guidance, and no time travel is offered.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper classes-sec" aria-labelledby="cls-h">
+  <div class="container">
+    <header class="section-head section-head--paper"><p class="eyebrow">The classification system</p><h2 class="display display--md" id="cls-h">Five classes of <em>temporal risk.</em></h2>
+      <p class="section-head__aside">Every destination and every advisory carries a class. Higher classes demand more preparation, more paperwork and more humility.</p></header>
+    <ol class="classes">
+      <li class="classes__item classes__item--1"><span class="classes__n">I</span><span class="risk risk--1 risk--compact" role="img" aria-label="Temporal risk: Class I, Serene (1 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="risk__class">Class I · Serene</span></span><strong>Serene</strong><p>A postcard with no consequences. Sensible shoes advised.</p>
+        <p class="classes__dests"><a href="destination-carbon-free-city.html">Carbon-Free City</a></p></li><li class="classes__item classes__item--2"><span class="classes__n">II</span><span class="risk risk--2 risk--compact" role="img" aria-label="Temporal risk: Class II, Mild (2 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="risk__class">Class II · Mild</span></span><strong>Mild</strong><p>Minor etiquette, minor jet lag. Resolvable with apologies.</p>
+        <p class="classes__dests"><a href="destination-mughal-court.html">Mughal Court</a>, <a href="destination-last-day-of-wifi.html">Last Day of Wi-Fi</a></p></li><li class="classes__item classes__item--3"><span class="classes__n">III</span><span class="risk risk--3 risk--compact" role="img" aria-label="Temporal risk: Class III, Elevated (3 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="risk__class">Class III · Elevated</span></span><strong>Elevated</strong><p>Environmental or cultural hazards. Briefing attendance mandatory.</p>
+        <p class="classes__dests"><a href="destination-new-earth.html">New Earth</a>, <a href="destination-alexandria-after-dark.html">Alexandria</a></p></li><li class="classes__item classes__item--4"><span class="classes__n">IV</span><span class="risk risk--4 risk--compact" role="img" aria-label="Temporal risk: Class IV, Severe (4 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="risk__class">Class IV · Severe</span></span><strong>Severe</strong><p>Rapid change, serious hazards. Licensed guide required.</p>
+        <p class="classes__dests"><span class="muted">No current destination</span></p></li><li class="classes__item classes__item--5"><span class="classes__n">V</span><span class="risk risk--5 risk--compact" role="img" aria-label="Temporal risk: Class V, Extreme (5 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="risk__class">Class V · Extreme</span></span><strong>Extreme</strong><p>Board escort mandatory. Not survivable unassisted.</p>
+        <p class="classes__dests"><a href="destination-the-first-dawn.html">The First Dawn</a></p></li>
+    </ol>
+  </div>
+</section>
+
+<div class="adv-wrap">
+  <div class="container adv-layout">
+    <nav class="adv-nav" aria-label="Advisory sections">
+      <p class="eyebrow">On this page</p>
+      <ol><li><a href="#before"><span>1</span>Before Departure</a></li><li><a href="#during"><span>2</span>During Your Visit</a></li><li><a href="#integrity"><span>3</span>Historical Integrity</a></li><li><a href="#anomalies"><span>4</span>Temporal Anomalies</a></li><li><a href="#return"><span>5</span>Return Protocol</a></li>
+        <li><a href="#emergency"><span>!</span>Emergency return</a></li><li><a href="#advisory-faq"><span>?</span>Advisory FAQ</a></li></ol>
+    </nav>
+    <div class="adv-content">
+      <section class="adv-section" id="before" aria-labelledby="before-h">
+      <header class="adv-section__head"><span class="adv-section__n">§ 1</span><h2 class="display display--md" id="before-h">Before Departure</h2><p class="muted">The most dangerous part of any journey is the part where you are certain you have prepared.</p></header>
+      <div class="banner banner--gold" role="note"><span class="banner__icon" aria-hidden="true">!</span><div><strong>Checklist required</strong><span>Complete every item below before your gate time. Gates do not wait; they merely re-open.</span></div></div>
+      <div class="checklist" data-checklist="ct-adv-before" aria-labelledby="chk-h">
+    <div class="checklist__head"><h3 class="h3" id="chk-h">Pre-departure checklist</h3>
+      <p class="checklist__progress"><span data-progress-text>0 of 8</span><span class="bar" aria-hidden="true"><i data-progress-bar></i></span></p></div>
+    <ul><li><label class="check"><input type="checkbox" data-item="0"><span class="check__box" aria-hidden="true"></span><span class="check__label">Return coordinate verified aloud, twice</span></label></li><li><label class="check"><input type="checkbox" data-item="1"><span class="check__box" aria-hidden="true"></span><span class="check__label">Timeline of origin declared on the manifest</span></label></li><li><label class="check"><input type="checkbox" data-item="2"><span class="check__box" aria-hidden="true"></span><span class="check__label">Orientation Seminar attended in full</span></label></li><li><label class="check"><input type="checkbox" data-item="3"><span class="check__box" aria-hidden="true"></span><span class="check__label">Era-appropriate clothing packed and fitted</span></label></li><li><label class="check"><input type="checkbox" data-item="4"><span class="check__box" aria-hidden="true"></span><span class="check__label">Tether beacon charged and tested</span></label></li><li><label class="check"><input type="checkbox" data-item="5"><span class="check__box" aria-hidden="true"></span><span class="check__label">Drift Table consulted for your destination</span></label></li><li><label class="check"><input type="checkbox" data-item="6"><span class="check__box" aria-hidden="true"></span><span class="check__label">Emergency contact filed with the Board</span></label></li><li><label class="check"><input type="checkbox" data-item="7"><span class="check__box" aria-hidden="true"></span><span class="check__label">Souvenir declaration form read, and re-read</span></label></li></ul>
+    <button class="btn btn--dark btn--small" type="button" data-reset>Reset checklist</button>
+  </div>
+      <ol class="adv-list">
+        <li class="adv" id="adv-01" data-class="2">
+          <span class="adv__num" aria-hidden="true">01</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-01 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Verify your return coordinate before departure.</h3>
+            <p>Read it aloud. Read it again. Have your guide read it. A return coordinate that is correct to six decimal places is a promise; one that is correct to five is a story you will tell at dinner parties, if you get home.</p>
+            <p class="adv__meta"><span class="risk risk--2 risk--compact" role="img" aria-label="Temporal risk: Class II, Mild (2 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="risk__class">Class II · Mild</span></span><span class="adv__dests">Applies to: <a href="destination-mughal-court.html">Mughal Court</a></span></p>
+          </div>
+        </li><li class="adv" id="adv-02" data-class="1">
+          <span class="adv__num" aria-hidden="true">02</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-02 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Declare your timeline of origin.</h3>
+            <p>Your Board manifest must record the timeline you are departing from. Travellers who cannot name their timeline will be asked, politely, to wait in a very calm room.</p>
+            <p class="adv__meta"><span class="risk risk--1 risk--compact" role="img" aria-label="Temporal risk: Class I, Serene (1 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="risk__class">Class I · Serene</span></span><span class="adv__dests">Applies to: <a href="destination-last-day-of-wifi.html">Last Day of Wi-Fi</a></span></p>
+          </div>
+        </li><li class="adv" id="adv-03" data-class="2">
+          <span class="adv__num" aria-hidden="true">03</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-03 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Pack for the era, not for the weather app.</h3>
+            <p>Natural fibres only. No logos, no zips, no visible stitching from any decade you are not visiting. See the Packing List for era-specific guidance.</p>
+            <p class="adv__meta"><span class="risk risk--2 risk--compact" role="img" aria-label="Temporal risk: Class II, Mild (2 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="risk__class">Class II · Mild</span></span><span class="adv__dests">Applies to: <a href="destination-alexandria-after-dark.html">Alexandria</a></span></p>
+          </div>
+        </li><li class="adv" id="adv-04" data-class="1">
+          <span class="adv__num" aria-hidden="true">04</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-04 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Attend the Orientation Seminar in full.</h3>
+            <p>It lasts ninety minutes and includes a short film. The film is excellent and deeply upsetting. Sit near the front.</p>
+            <p class="adv__meta"><span class="risk risk--1 risk--compact" role="img" aria-label="Temporal risk: Class I, Serene (1 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="risk__class">Class I · Serene</span></span><span class="adv__dests">Applies to: <a href="destination-carbon-free-city.html">Carbon-Free City</a></span></p>
+          </div>
+        </li>
+      </ol>
+    </section>
+<section class="adv-section" id="during" aria-labelledby="during-h">
+      <header class="adv-section__head"><span class="adv-section__n">§ 2</span><h2 class="display display--md" id="during-h">During Your Visit</h2><p class="muted">The era will not adapt to you. You are, as the Board politely reminds you, the anachronism.</p></header>
+      <div class="banner banner--gold" role="note"><span class="banner__icon" aria-hidden="true">!</span><div><strong>Caution · you are the anachronism</strong><span>The era will not adapt to you. Look, listen, and leave no trace of the twenty-first century.</span></div></div>
+      
+      <ol class="adv-list">
+        <li class="adv" id="adv-05" data-class="3">
+          <span class="adv__num" aria-hidden="true">05</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-05 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Never assume that the passage of time is synchronised between eras.</h3>
+            <p>An afternoon in one century may be a fortnight in another. Consult your Drift Table before making dinner plans, and never promise anyone you will be back “in a minute.”</p>
+            <p class="adv__meta"><span class="risk risk--3 risk--compact" role="img" aria-label="Temporal risk: Class III, Elevated (3 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="risk__class">Class III · Elevated</span></span><span class="adv__dests">Applies to: <a href="destination-new-earth.html">New Earth</a>, <a href="destination-carbon-free-city.html">Carbon-Free City</a>, <a href="destination-the-first-dawn.html">The First Dawn</a></span></p>
+          </div>
+        </li><li class="adv" id="adv-06" data-class="2">
+          <span class="adv__num" aria-hidden="true">06</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-06 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Chronological jet lag is real.</h3>
+            <p>Crossing centuries unsettles the body’s sense of when it is. Expect odd appetites, unwarranted nostalgia and a feeling that you have forgotten something. You have: it is called Tuesday. Drink water and keep a field note.</p>
+            <p class="adv__meta"><span class="risk risk--2 risk--compact" role="img" aria-label="Temporal risk: Class II, Mild (2 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="risk__class">Class II · Mild</span></span><span class="adv__dests">Applies to: <a href="destination-new-earth.html">New Earth</a>, <a href="destination-last-day-of-wifi.html">Last Day of Wi-Fi</a></span></p>
+          </div>
+        </li><li class="adv" id="adv-07" data-class="3">
+          <span class="adv__num" aria-hidden="true">07</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-07 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Do not remove artifacts from protected historical sites.</h3>
+            <p>Not a coin. Not a pebble. Not a fragment of mosaic. Anything you carry out of an era will, at best, be confiscated at the gate and, at worst, be discovered in a museum with your fingerprints on it.</p>
+            <p class="adv__meta"><span class="risk risk--3 risk--compact" role="img" aria-label="Temporal risk: Class III, Elevated (3 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="risk__class">Class III · Elevated</span></span><span class="adv__dests">Applies to: <a href="destination-mughal-court.html">Mughal Court</a>, <a href="destination-alexandria-after-dark.html">Alexandria</a></span></p>
+          </div>
+        </li><li class="adv" id="adv-08" data-class="1">
+          <span class="adv__num" aria-hidden="true">08</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-08 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Speak less than you know.</h3>
+            <p>Idioms, slang and accurate opinions about the future are the quickest ways to be remembered. You are visiting to be forgotten.</p>
+            <p class="adv__meta"><span class="risk risk--1 risk--compact" role="img" aria-label="Temporal risk: Class I, Serene (1 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="risk__class">Class I · Serene</span></span><span class="adv__dests">Applies to: <a href="destination-carbon-free-city.html">Carbon-Free City</a></span></p>
+          </div>
+        </li>
+      </ol>
+    </section>
+<section class="adv-section" id="integrity" aria-labelledby="integrity-h">
+      <header class="adv-section__head"><span class="adv-section__n">§ 3</span><h2 class="display display--md" id="integrity-h">Historical Integrity</h2><p class="muted">We borrow the past. We do not edit it.</p></header>
+      <div class="banner banner--burgundy" role="note"><span class="banner__icon" aria-hidden="true">!</span><div><strong>Stop · Class IV advisories</strong><span>Licensed guide required. These rules protect more than your return. They protect everyone’s yesterday.</span></div></div>
+      
+      <ol class="adv-list">
+        <li class="adv" id="adv-09" data-class="4">
+          <span class="adv__num" aria-hidden="true">09</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-09 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Do not alter events of historical significance.</h3>
+            <p>The Board’s Integrity Desk monitors every itinerary. If you find yourself wondering whether a small intervention might be harmless, it is not harmless, and you are already on the list.</p>
+            <p class="adv__meta"><span class="risk risk--4 risk--compact" role="img" aria-label="Temporal risk: Class IV, Severe (4 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="risk__class">Class IV · Severe</span></span><span class="adv__dests">Applies to: <a href="destination-alexandria-after-dark.html">Alexandria</a>, <a href="destination-the-first-dawn.html">The First Dawn</a></span></p>
+          </div>
+        </li><li class="adv" id="adv-10" data-class="4">
+          <span class="adv__num" aria-hidden="true">10</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-10 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Never disclose future events to historical figures.</h3>
+            <p>Not a hint. Not a joke. Not a polite “you’ll love what happens next.” People remember who told them things, and so do their biographers.</p>
+            <p class="adv__meta"><span class="risk risk--4 risk--compact" role="img" aria-label="Temporal risk: Class IV, Severe (4 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="risk__class">Class IV · Severe</span></span><span class="adv__dests">Applies to: <a href="destination-mughal-court.html">Mughal Court</a></span></p>
+          </div>
+        </li><li class="adv" id="adv-11" data-class="3">
+          <span class="adv__num" aria-hidden="true">11</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-11 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Do not introduce technology.</h3>
+            <p>No devices, no clever tools, no “just a quick demonstration.” If you must record, use era-safe materials: ink, charcoal, memory, and a very good sense of when to stop talking.</p>
+            <p class="adv__meta"><span class="risk risk--3 risk--compact" role="img" aria-label="Temporal risk: Class III, Elevated (3 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="risk__class">Class III · Elevated</span></span><span class="adv__dests">Applies to: <a href="destination-alexandria-after-dark.html">Alexandria</a></span></p>
+          </div>
+        </li>
+      </ol>
+    </section>
+<section class="adv-section" id="anomalies" aria-labelledby="anomalies-h">
+      <header class="adv-section__head"><span class="adv-section__n">§ 4</span><h2 class="display display--md" id="anomalies-h">Temporal Anomalies</h2><p class="muted">When something is strange, assume it is. When something is familiar, assume it more.</p></header>
+      <div class="banner banner--ink" role="note"><span class="banner__icon" aria-hidden="true">!</span><div><strong>Anomaly watch</strong><span>Report. Do not repair. Strange things, if left alone, are usually only strange.</span></div></div>
+      
+      <ol class="adv-list">
+        <li class="adv" id="adv-12" data-class="3">
+          <span class="adv__num" aria-hidden="true">12</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-12 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Report any encounter with an alternate version of yourself.</h3>
+            <p>Remain calm, do not shake hands, and do not compare notes. Alternate yourself will be equally suspicious. File Form 9-A within the hour and request a quiet room.</p>
+            <p class="adv__meta"><span class="risk risk--3 risk--compact" role="img" aria-label="Temporal risk: Class III, Elevated (3 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="risk__class">Class III · Elevated</span></span><span class="adv__dests">Applies to: <a href="destination-new-earth.html">New Earth</a>, <a href="destination-last-day-of-wifi.html">Last Day of Wi-Fi</a>, <a href="destination-the-first-dawn.html">The First Dawn</a></span></p>
+          </div>
+        </li><li class="adv" id="adv-13" data-class="4">
+          <span class="adv__num" aria-hidden="true">13</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-13 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Never accept an unverified invitation from your future self.</h3>
+            <p>They sound very convincing. They know your middle name, your favourite sandwich and exactly what you want to hear. Verify via the Board’s authentication line and, if in doubt, decline politely and leave the room.</p>
+            <p class="adv__meta"><span class="risk risk--4 risk--compact" role="img" aria-label="Temporal risk: Class IV, Severe (4 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="risk__class">Class IV · Severe</span></span><span class="adv__dests">Applies to: <a href="destination-new-earth.html">New Earth</a></span></p>
+          </div>
+        </li><li class="adv" id="adv-14" data-class="2">
+          <span class="adv__num" aria-hidden="true">14</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-14 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">If a clock runs backward, do not wind it.</h3>
+            <p>Observe, note the time (such as it is) and move away. It is not your clock, and nobody will thank you for fixing it.</p>
+            <p class="adv__meta"><span class="risk risk--2 risk--compact" role="img" aria-label="Temporal risk: Class II, Mild (2 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="risk__class">Class II · Mild</span></span></p>
+          </div>
+        </li>
+      </ol>
+    </section>
+<section class="adv-section" id="return" aria-labelledby="return-h">
+      <header class="adv-section__head"><span class="adv-section__n">§ 5</span><h2 class="display display--md" id="return-h">Return Protocol</h2><p class="muted">Arrival is optional. Departure is the whole point.</p></header>
+      <div class="banner banner--olive" role="note"><span class="banner__icon" aria-hidden="true">!</span><div><strong>Return protocol in force</strong><span>Depart by the gate you arrived at. Declare what you carry. Drink the tea.</span></div></div>
+      
+      <ol class="adv-list">
+        <li class="adv" id="adv-15" data-class="2">
+          <span class="adv__num" aria-hidden="true">15</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-15 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Return only through the gate you arrived by.</h3>
+            <p>Other gates may look identical. They are not. Some of them lead to the same place a few minutes earlier, which is worse than it sounds.</p>
+            <p class="adv__meta"><span class="risk risk--2 risk--compact" role="img" aria-label="Temporal risk: Class II, Mild (2 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="risk__class">Class II · Mild</span></span><span class="adv__dests">Applies to: <a href="destination-mughal-court.html">Mughal Court</a>, <a href="destination-the-first-dawn.html">The First Dawn</a></span></p>
+          </div>
+        </li><li class="adv" id="adv-16" data-class="1">
+          <span class="adv__num" aria-hidden="true">16</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-16 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">Submit to the Chronological Decompression Quarter-Hour.</h3>
+            <p>A mandatory fifteen minutes in a pleasant room with tea. You will want to leave. Do not leave.</p>
+            <p class="adv__meta"><span class="risk risk--1 risk--compact" role="img" aria-label="Temporal risk: Class I, Serene (1 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="risk__class">Class I · Serene</span></span><span class="adv__dests">Applies to: <a href="destination-last-day-of-wifi.html">Last Day of Wi-Fi</a></span></p>
+          </div>
+        </li><li class="adv" id="adv-17" data-class="1">
+          <span class="adv__num" aria-hidden="true">17</span>
+          <div class="adv__main">
+            <p class="adv__id">ADV-17 <span class="notice__badge">Fictional advisory</span></p>
+            <h3 class="adv__title">File your field note within 72 hours.</h3>
+            <p>The Board’s archive depends on honest, specific, slightly embarrassing accounts. The best entries are published in the Field Journal.</p>
+            <p class="adv__meta"><span class="risk risk--1 risk--compact" role="img" aria-label="Temporal risk: Class I, Serene (1 of 5)"><span class="risk__label">Temporal risk</span><span class="risk__pips" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="risk__class">Class I · Serene</span></span><span class="adv__dests">Applies to: <a href="destination-carbon-free-city.html">Carbon-Free City</a></span></p>
+          </div>
+        </li>
+      </ol>
+    </section>
+    </div>
+  </div>
+</div>
+
+<section class="section section--burgundy emergency grain" id="emergency" aria-labelledby="em-h">
+  <div class="container">
+    <header class="section-head"><p class="eyebrow">Emergency return protocol</p><h2 class="display display--lg" id="em-h">If something goes wrong: <em>R.E.T.U.R.N.</em></h2>
+      <p class="section-head__aside">Memorise it. Print it. Sew it into something. Six steps, in order.</p></header>
+    <ol class="protocol">
+      <li class="protocol__step"><span class="protocol__k">R</span><span class="protocol__i">01</span><h3>Remain calm</h3><p>Stop. Breathe. Nobody has ever fixed a timeline while sprinting.</p></li><li class="protocol__step"><span class="protocol__k">E</span><span class="protocol__i">02</span><h3>Establish your coordinate</h3><p>Read the return coordinate sewn into your hem. Say it aloud.</p></li><li class="protocol__step"><span class="protocol__k">T</span><span class="protocol__i">03</span><h3>Trigger the Tether</h3><p>Hold the beacon for five seconds until it chimes. It will not chime on its first attempt.</p></li><li class="protocol__step"><span class="protocol__k">U</span><span class="protocol__i">04</span><h3>Unclasp local anchors</h3><p>Let go of artifacts, promises and any strong opinions about the local cuisine.</p></li><li class="protocol__step"><span class="protocol__k">R</span><span class="protocol__i">05</span><h3>Reach the gate</h3><p>Walk, don’t run, to your arrival gate. If it has moved, wait. It will return.</p></li><li class="protocol__step"><span class="protocol__k">N</span><span class="protocol__i">06</span><h3>Notify the Board</h3><p>On arrival, report to the Decompression Room, and tell the truth.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section--paper faq-sec" id="advisory-faq" aria-labelledby="afaq-h">
+  <div class="container faq-sec__grid">
+    <header><p class="eyebrow">Advisory FAQ</p><h2 class="display display--md" id="afaq-h">Questions you will <em>definitely ask.</em></h2>
+      <p class="muted">More in the <a href="faq.html">Paradox FAQ</a>.</p></header>
+    <div class="faq"><details class="faq__item"><summary><span>Are these advisories real safety guidance?</span><i aria-hidden="true"></i></summary><div class="faq__a"><p>No. They are fictional world-building for a design project. Time travel is not available, and for real travel advice you should consult your national travel authority.</p></div></details><details class="faq__item"><summary><span>Who writes the advisories?</span><i aria-hidden="true"></i></summary><div class="faq__a"><p>The Board’s Department of Cautionary Tales: three clerks, an archivist, and a kettle of considerable age. All of them have been very careful and some of them have been very wrong.</p></div></details><details class="faq__item"><summary><span>What does a Class IV rating actually mean?</span><i aria-hidden="true"></i></summary><div class="faq__a"><p>It means the destination demands a licensed guide, a briefing in full and the understanding that the Board’s rescue window is narrow. Class V adds a mandatory escort and a signature on a document with an unusual number of pages.</p></div></details><details class="faq__item"><summary><span>What if I accidentally change something small?</span><i aria-hidden="true"></i></summary><div class="faq__a"><p>The past is elastic. A dropped coin or an unwise remark is typically absorbed. File Form 7-b at the gate, describe it honestly and expect to be asked three follow-up questions. If the Integrity Desk calls twice, please sit down.</p></div></details><details class="faq__item"><summary><span>Is the Board liable for paradoxes?</span><i aria-hidden="true"></i></summary><div class="faq__a"><p>The Board is liable for your return. Paradoxes, as the small print on every manifest explains, remain the traveller’s own.</p></div></details></div>
+  </div>
+</section>
+
+<section class="section section--ink grain cta-band" aria-labelledby="acta">
+  <div class="container cta-band__inner">
+    <div><p class="eyebrow">Prepared?</p><h2 class="display display--lg" id="acta">Then choose <em>your century.</em></h2>
+      <p class="links-row"><a class="link-arrow" href="destinations.html">Browse destinations</a><a class="link-arrow" href="packing.html">Open the packing list</a><a class="link-arrow" href="faq.html">Read the Paradox FAQ</a></p></div>
+    <a class="btn-ticket btn-ticket--lg" href="booking.html"><span>Plan Your Journey</span></a>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="index.html" aria-label="CHRONOTERRA — home"><svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.5" fill="none" stroke="currentColor" stroke-width="1"/><ellipse cx="16" cy="16" rx="13.5" ry="5.2" transform="rotate(-28 16 16)" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="26.7" cy="8.2" r="2.1" fill="var(--gold)"/><path d="M16 1.2v3M16 27.8v3" stroke="currentColor" stroke-width="1"/></svg><span class="brand__text"><span class="brand__word">CHRONOTERRA</span><span class="brand__sub">Temporal Tourism Board</span></span></a>
+        <p class="site-footer__statement">The world’s first tourism board beyond the boundaries of time.</p>
+      </div>
+      <nav class="site-footer__col" aria-label="Explore">
+        <h2 class="eyebrow">Explore</h2>
+        <ul><li><a href="destinations.html">Destinations</a></li><li><a href="advisories.html">Travel Advisories</a></li><li><a href="booking.html">Plan Your Journey</a></li></ul>
+      </nav>
+      <nav class="site-footer__col" aria-label="Traveller’s Kit">
+        <h2 class="eyebrow">Traveller’s Kit</h2>
+        <ul><li><a href="journal.html">Field Journal</a></li><li><a href="packing.html">Packing List</a></li><li><a href="faq.html">Paradox FAQ</a></li></ul>
+      </nav>
+      <div class="site-footer__col">
+        <h2 class="eyebrow">The Agency</h2>
+        <address>
+          CHRONOTERRA Temporal Tourism Board<br>
+          Registered outside of time<br>
+          HQ: roughly 11:59, local<br>
+          <a href="mailto:concierge@chronoterra.example">concierge@chronoterra.example</a><br>
+          <span class="muted">Placeholder contact · no real inbox</span>
+        </address>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p class="small">A fictional agency created for the Autumn of Code Website Design Competition. No bookings are real; no payment is taken. Photography is credited on the <a href="credits.html">credits page</a>. Built by Samnan &amp; Mohammad Shadab.</p>
+      <p class="site-footer__closing">Present company excluded.</p>
+    </div>
+  </div>
+</footer>
+<button class="to-top" type="button" aria-label="Back to top" hidden><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
