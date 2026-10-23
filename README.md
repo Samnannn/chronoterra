@@ -9,6 +9,8 @@ An original, fictional tourism-board website for the **Autumn of Code 24-hour We
 
 **Live site:** https://samnannn.github.io/chronoterra/
 
+![CHRONOTERRA — a contact sheet of the site's pages](1.png)
+
 ## Run it
 
 It is plain HTML, CSS and JavaScript. There is **no install and no build step** to view the site.
